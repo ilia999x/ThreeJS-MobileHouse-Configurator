@@ -1,0 +1,31 @@
+html,
+body,
+#root {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+}
+.menu{
+  width: 100%;
+  height: 100%;
+  -webkit-text-fill-color: #FFF;
+}
+.css-156df9n-MuiPaper-root{
+  background-color: #302e33af!Important;
+  border-radius: 5px!Important;
+  -webkit-text-fill-color: #FFF;
+
+}
+.content{
+  
+  margin: 20px;
+  text-align: center;
+  height: 40px;
+  width: 59px;
+  background-color: #4800ffeb!Important;
+  border-radius: 20px;
+}
+.mainbox{
+  padding-left: 20px;
+}

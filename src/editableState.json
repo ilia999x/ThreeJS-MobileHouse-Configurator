@@ -1,0 +1,14 @@
+{
+    "editables": {
+      "DirectionalLight": {
+        "type": "directionalLight",
+        "properties": {
+          "transform": [
+          
+          ]
+        }
+      }
+      
+    }
+  }
+  
