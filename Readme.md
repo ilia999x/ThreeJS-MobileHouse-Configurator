@@ -28,5 +28,3 @@ Explore snapshots of the configurator in action:
 1. ![Image 1](images/image_1.jpg)
 2. ![Image 2](images/image_2.jpg)
 
-Dive in and unleash your creativity! 🎨✨
-
