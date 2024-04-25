@@ -1,12 +1,12 @@
 
 
 import React, { useEffect , useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
-import { MeshBVH, acceleratedRaycast } from 'three-mesh-bvh'
+import { useGLTF } from '@react-three/drei/core/useGLTF'
+// import { MeshBVH, acceleratedRaycast } from 'three-mesh-bvh'
 
 export default function Model({DistData,props}) {
   const group = useRef()
-
+  console.log('desert test')
   useEffect(() => {
     if (group.current) {
       group.current.raycast = acceleratedRaycast
@@ -19,7 +19,10 @@ export default function Model({DistData,props}) {
     }
   }, [group])
   
-  const { nodes, materials } = useGLTF('/Desert.glb')
+  const { nodes, materials } = useGLTF('/Desert.glb','/draco-gltf')
+  console.log(nodes,'listall')
+  console.log(nodes.DES_out.geometry,'DES_out')
+  console.log(nodes.DES_out.geometry,'DES_out')
   return (
     <>
     <mesh
@@ -30,7 +33,7 @@ export default function Model({DistData,props}) {
         material-envMapIntensity={0.1}
         material-roughness={DistData.stormdesert}
         >
-        <bufferGeometry attach={nodes.DES_out.geometry}></bufferGeometry>
+        {/* <bufferGeometry attach={nodes.DES_out.geometry}></bufferGeometry> */}
       </mesh>
       <mesh
         castShadow
@@ -43,7 +46,7 @@ export default function Model({DistData,props}) {
         material-envMapIntensity={0.1}
         material-roughness={DistData.stormdesert}
         >
-        <bufferGeometry attach={nodes.DES_main.geometry}></bufferGeometry>
+        {/* <bufferGeometry attach={nodes.DES_main.geometry}></bufferGeometry> */}
       </mesh>
     </>
   )
